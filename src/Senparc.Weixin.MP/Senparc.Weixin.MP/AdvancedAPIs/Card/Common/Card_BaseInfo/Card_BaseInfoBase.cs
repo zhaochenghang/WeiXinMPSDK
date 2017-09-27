@@ -177,6 +177,11 @@ namespace Senparc.Weixin.MP.AdvancedAPIs.Card
         /// 积分余额变动消息类型
         /// </summary>
         public Modify_Msg_Operation modify_msg_operation { get; set; }
+        
+        /// <summary>
+        /// 第三方代制模式子商户信息
+        /// </summary>
+        public Sub_merchant_info sub_merchant_info { get; set; }
 
         //public Card_BaseInfoBase()
         //{
@@ -241,5 +246,15 @@ namespace Senparc.Weixin.MP.AdvancedAPIs.Card
         /// 跳转链接
         /// </summary>
         public string url { get; set; }
+    }
+    /// <summary>
+    /// 第三方代制模式子商户信息
+    /// </summary>
+    public class Sub_merchant_info
+    {
+        /// <summary>
+        /// 子商户Id
+        /// </summary>
+        public string merchant_id { get; set; }
     }
 }
